@@ -1,0 +1,14 @@
+{
+  "name": "high-performance-js-demo",
+  "description": "high-performance-js-demo",
+  "main": "",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
