@@ -8,7 +8,7 @@
 		var testFn = function() {
 			var array = [];
 			array[300000000] = 1;
-			for(var i = 0; i < array.length; i++) {
+			for(var i = 0, len = array.length; i < len; i++) {
 				
 			}
 		}
