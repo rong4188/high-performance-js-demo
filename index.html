@@ -7,9 +7,12 @@
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/androidstudio.min.css"/>
 	<script src="main.js"></script>
 	<script src="scripts/services/calculagraph.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 
 </head>
 
@@ -22,10 +25,16 @@
 			</ul>
 	</nav>
 	<div>
-		<label>Name:</label>
-		<input type="text" ng-model="yourName" placeholder="Enter a name here">
-		<hr>
-		<h1>Hello {{yourName}}!</h1>
+		<pre>
+			<code class="hljs JavaScript">
+				function() {
+					var array = [];
+					array[300000000] = 1;
+					for(var i = 0, len = array.length; i < len; i++) {
+					}
+				}
+			</code>
+		</pre>
 		<h1>{{result.elapsedTime}}</h1>
 	</div>
 </body>
