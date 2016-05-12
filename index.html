@@ -24,18 +24,19 @@
 				<li role="presentation"><a href="#">Chapter 1</a></li>
 			</ul>
 	</nav>
-	<div>
+	<div class="js-main-container container">
 		<pre>
-			<code class="hljs JavaScript">
-				function() {
+			<code class="js-code-piece hljs JavaScript">
+				<!--function() {
 					var array = [];
 					array[300000000] = 1;
 					for(var i = 0, len = array.length; i < len; i++) {
 					}
-				}
+				}-->
 			</code>
 		</pre>
-		<h1>{{result.elapsedTime}}</h1>
+		<button class="js-run btn btn-success" ng-click="runCode()">Run</button>
+		<h1>Elaspsed Time: {{result.elapsedTime}}</h1>
 	</div>
 </body>
 
